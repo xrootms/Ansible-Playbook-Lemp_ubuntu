@@ -1,0 +1,67 @@
+---
+- hosts: all
+  become: yes
+  name: play01
+  tasks:
+    - name: INSTALL LEMP 
+      apt: name={{ item }} state=latest
+      with_items:
+           - nginx
+           - mysql-client
+           - mysql-server
+           - php
+           - php-mysql
+           - php-fpm
+           - php-gd
+           - php-cli
+           - php-common
+           - python3-mysqldb
+           - unzip
+           - phpmyadmin
+    
+    - name: START services
+      service: name={{ item }} state=started enabled=true
+      with_items:
+           - nginx
+           - mysql
+
+# Nginx Configuration
+    - name: Sets Nginx conf file
+      template:
+        src: "files/nginx.conf.j2"
+        dest: "/etc/nginx/sites-available/ngnix.conf"
+
+# Sets Up PHP Info Page
+    - name: Sets Up PHP Info Page
+      template:
+        src: "files/info.php.j2"
+        dest: "/var/www/html/info.php"
+
+# Copy source code   
+    - name: copy html file
+      copy: src=index.php dest=/var/www/html/index.php mode=0664
+
+
+# MySQL Configuration
+
+    - name: Setup MYSQL root password
+      mysql_user: name=root host=localhost password=8V2@db
+
+    - name: Create DB user
+      mysql_user: login_user=root login_password=8V2@db user=dbadmin password=8V2@apk priv=*.*:ALL state=present
+  
+    - name: Create DATABASE
+      mysql_db: login_user=root login_password=8V2@db db=kelltondb state=present
+    
+
+# Set Up Phpmyadmin
+    - name: create symbolic link /usr/share/phpmyadmin -> /var/www/html/phpmyadmin
+      file:
+        src: /usr/share/phpmyadmin
+        dest: /var/www/html/phpmyadmin
+        state: link
+
+    - name: Restart Nginx
+      service:
+        name: nginx
+        state: restarted
