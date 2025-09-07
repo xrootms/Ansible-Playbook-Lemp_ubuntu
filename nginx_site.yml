@@ -45,13 +45,13 @@
 # MySQL Configuration
 
     - name: Setup MYSQL root password
-      mysql_user: name=root host=localhost password=8V2@db
+      mysql_user: name=root host=localhost password=123@db
 
     - name: Create DB user
-      mysql_user: login_user=root login_password=8V2@db user=dbadmin password=8V2@apk priv=*.*:ALL state=present
+      mysql_user: login_user=root login_password=123@db user=dbadmin password=123@apk priv=*.*:ALL state=present
   
     - name: Create DATABASE
-      mysql_db: login_user=root login_password=8V2@db db=kelltondb state=present
+      mysql_db: login_user=root login_password=123@db db=kelltondb state=present
     
 
 # Set Up Phpmyadmin
