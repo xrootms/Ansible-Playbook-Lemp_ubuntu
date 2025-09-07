@@ -31,7 +31,7 @@ After the playbook runs successfully:
    systemctl status nginx
    ```
 2. Place your web root file `index.php` in (e.g., `/var/www/html/`).
-3. Place your `Mysqql root_password` and Mysql DB `user_passward`.
+3. Place your `Mysql root_password` and `Mysql DB user_passward`.
 4. Visit your server in a browser:
 
    ```
@@ -41,8 +41,3 @@ After the playbook runs successfully:
 You should see the PHP test page.
 
 ---
-
-## 📜 License
-
-This project is licensed under the MIT License.  
-Feel free to use and modify it as needed.
