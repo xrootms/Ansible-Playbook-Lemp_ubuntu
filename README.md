@@ -12,20 +12,11 @@
 </table>
 
 
+<img src="./image/image.jpg" alt="LEMP Diagram" width="300" align="left" style="margin-right:15px;"/>
 
-<table>
-  <tr>
-    <td width="50%">
-      <img src="./image/image.jpg" alt="LEMP Diagram" width="100%">
-    </td>
-    <td width="50%" valign="middle">
-      This repository provides configuration files to set up a basic **LEMP stack** (Linux, Nginx, MySQL, PHP) on an Ubuntu server.  
-      It includes a sample Nginx site configuration and a PHP test file.  
+This repository provides configuration files to set up a basic **LEMP stack** (Linux, Nginx, MySQL, PHP) on an Ubuntu server.  
+It includes a sample Nginx site configuration and a PHP test file.
 
-      The setup is designed for beginners and developers who want to quickly deploy and test web applications on a lightweight, production-like environment.  
-    </td>
-  </tr>
-</table>
 
 ---
 
