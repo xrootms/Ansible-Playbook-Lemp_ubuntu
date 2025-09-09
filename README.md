@@ -18,6 +18,9 @@ This repository provides configuration files to set up a basic **LEMP stack** (L
 It includes a sample Nginx site configuration and a PHP test file.
 
 
+
+
+
 ---
 
 ## Running this Playbook
