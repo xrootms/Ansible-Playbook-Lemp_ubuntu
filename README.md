@@ -1,23 +1,14 @@
 # Playbook that Installs and Configures Linux, Nginx, MySQL, and PHP.
 
-<p align="left">
-This repository provides configuration files to set up a basic **LEMP stack** (Linux, Nginx, MySQL, PHP) on an Ubuntu server.  
-It includes a sample Nginx site configuration and a PHP test file.
-</p>
-<p align="right">
-  <img src="./image/image.jpg" alt="LEMP Diagram" width="500">
-</p>
-
 <table>
   <tr>
-    <td><img src="./image/image.jpg" alt="LEMP Diagram" width="800"></td>
+    <td><img src="./image/image.jpg" alt="LEMP Diagram" width="900"></td>
     <td>
       This repository provides configuration files to set up a basic **LEMP stack** (Linux, Nginx, MySQL, PHP) on an Ubuntu server.  
       It includes a sample Nginx site configuration and a PHP test file.
     </td>
   </tr>
 </table>
-
 
 ---
 
