@@ -18,7 +18,7 @@
     <td width="50%">
       <img src="./image/image.jpg" alt="LEMP Diagram" width="100%">
     </td>
-    <td width="50%">
+    <td width="50%" valign="middle">
       This repository provides configuration files to set up a basic **LEMP stack** (Linux, Nginx, MySQL, PHP) on an Ubuntu server.  
       It includes a sample Nginx site configuration and a PHP test file.  
 
