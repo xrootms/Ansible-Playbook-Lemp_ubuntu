@@ -1,4 +1,4 @@
-# LEMP Stack Setup on Ubuntu
+# Playbook that Installs and Configures Linux, Nginx, MySQL, and PHP.
 
 This repository provides configuration files to set up a basic **LEMP stack** (Linux, Nginx, MySQL, PHP) on an Ubuntu server.  
 It includes a sample Nginx site configuration and a PHP test file.
